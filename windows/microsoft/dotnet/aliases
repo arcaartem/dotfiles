@@ -1,4 +1,2 @@
-export PATH=$PATH:/c/Windows/Microsoft.NET/Framework/v3.5
-
 alias msbuild=msbuild.exe
 alias psh=powershell
