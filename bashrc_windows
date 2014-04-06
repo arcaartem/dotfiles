@@ -1,8 +1,8 @@
 export dotfiles=~/dotfiles
 
-. $dotfiles/bash/env
-. $dotfiles/bash/config
-. $dotfiles/bash/aliases
+. $dotfiles/bash_windows/env
+. $dotfiles/bash_windows/config
+. $dotfiles/bash_windows/aliases
 . $dotfiles/ruby/aliases
 . $dotfiles/git/aliases
 . $dotfiles/windows/microsoft/dotnet/aliases
