@@ -5,4 +5,7 @@ export dotfiles=~/dotfiles
 . $dotfiles/bash_osx/aliases
 . $dotfiles/ruby/aliases
 . $dotfiles/git/aliases
+. $dotfiles/git/env
+. $dotfiles/git/contrib/git-completion.bash
+. $dotfiles/git/contrib/git-prompt.sh
 . $dotfiles/dirb/dirb.sh
