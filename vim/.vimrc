@@ -3,4 +3,8 @@ syntax on
 filetype plugin indent on
 set clipboard+=unnamed
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
-colorscheme monokai
+if has("win32")
+	colorscheme molokai
+else
+	colorscheme monokai
+endif
