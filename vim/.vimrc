@@ -8,6 +8,7 @@ set backspace=indent,eol,start
 set number
 set nocompatible
 set ruler
+set wildmenu
 set laststatus=2
 
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
