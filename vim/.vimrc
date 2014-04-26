@@ -18,8 +18,4 @@ set smarttab
 
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
 
-if has("win32")
-	colorscheme molokai
-else
-	colorscheme monokai
-endif
+colorscheme desertEx
