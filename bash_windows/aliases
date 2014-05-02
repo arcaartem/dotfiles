@@ -13,7 +13,7 @@ alias cls='clear'
 alias vim='vim -N'
 alias vi='vim -N'
 alias e='exit'
-alias subl='notepad'
+alias subl='start //D "C:\\Program Files\\Sublime Text 3" sublime_text'
 
 function take {
 mkdir -p $1 
