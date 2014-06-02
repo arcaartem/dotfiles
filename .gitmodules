@@ -25,3 +25,6 @@
 [submodule "vim/vimfolder/bundle/vim-surround"]
 	path = vim/vimfolder/bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
+[submodule "vim/vimfolder/bundle/vim-repeat"]
+	path = vim/vimfolder/bundle/vim-repeat
+	url = git://github.com/tpope/vim-repeat.git
