@@ -22,3 +22,6 @@
 [submodule "vim/vimfolder/bundle/vim-speeddating"]
 	path = vim/vimfolder/bundle/vim-speeddating
 	url = git://github.com/tpope/vim-speeddating.git
+[submodule "vim/vimfolder/bundle/vim-surround"]
+	path = vim/vimfolder/bundle/vim-surround
+	url = git://github.com/tpope/vim-surround.git
