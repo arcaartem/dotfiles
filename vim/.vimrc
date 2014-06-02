@@ -20,3 +20,6 @@ set wildmenu
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
 
 colorscheme desertEx
+
+set guifont=Liberation\ Mono\ for\ Powerline
+let g:airline_powerline_fonts=1
