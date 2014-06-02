@@ -19,3 +19,6 @@
 [submodule "vim/vimfolder/bundle/vim-abolish"]
 	path = vim/vimfolder/bundle/vim-abolish
 	url = git://github.com/tpope/vim-abolish.git
+[submodule "vim/vimfolder/bundle/vim-speeddating"]
+	path = vim/vimfolder/bundle/vim-speeddating
+	url = git://github.com/tpope/vim-speeddating.git
