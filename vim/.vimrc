@@ -22,8 +22,13 @@ autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
 
 colorscheme desertEx
 
+if has("gui_running")
+    set lines=50 columns=160
+endif
+
 if has("win32") || has("win16")
-    set guifont=Liberation_Mono_for_Powerline
+    set t_Co=256
+    set guifont=DejaVu_Sans_Mono_for_Powerline:h10
 else
     set guifont=Liberation\ Mono\ for\ Powerline
 endif
