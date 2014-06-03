@@ -22,5 +22,10 @@ autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
 
 colorscheme desertEx
 
-set guifont=Liberation\ Mono\ for\ Powerline
+if has("win32") || has("win16")
+    set guifont=Liberation_Mono_for_Powerline
+else
+    set guifont=Liberation\ Mono\ for\ Powerline
+endif
+
 let g:airline_powerline_fonts=1

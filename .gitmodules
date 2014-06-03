@@ -1,6 +1,6 @@
 [submodule "vim/bundle/vim-sensible"]
 	path = vim/vimfolder/bundle/vim-sensible
-	url = git://github.com/tpope/vim-sensible.git
+	url = https://github.com/tpope/vim-sensible.git
 [submodule "vim/bundle/nerdtree"]
 	path = vim/vimfolder/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
@@ -15,16 +15,16 @@
 	url = https://github.com/terryma/vim-multiple-cursors.git
 [submodule "vim/vimfolder/bundle/vim-fugitive"]
 	path = vim/vimfolder/bundle/vim-fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim/vimfolder/bundle/vim-abolish"]
 	path = vim/vimfolder/bundle/vim-abolish
-	url = git://github.com/tpope/vim-abolish.git
+	url = https://github.com/tpope/vim-abolish.git
 [submodule "vim/vimfolder/bundle/vim-speeddating"]
 	path = vim/vimfolder/bundle/vim-speeddating
-	url = git://github.com/tpope/vim-speeddating.git
+	url = https://github.com/tpope/vim-speeddating.git
 [submodule "vim/vimfolder/bundle/vim-surround"]
 	path = vim/vimfolder/bundle/vim-surround
-	url = git://github.com/tpope/vim-surround.git
+	url = https://github.com/tpope/vim-surround.git
 [submodule "vim/vimfolder/bundle/vim-repeat"]
 	path = vim/vimfolder/bundle/vim-repeat
-	url = git://github.com/tpope/vim-repeat.git
+	url = https://github.com/tpope/vim-repeat.git
