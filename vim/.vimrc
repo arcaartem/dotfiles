@@ -30,7 +30,7 @@ if has("win32") || has("win16")
     set t_Co=256
     set guifont=DejaVu_Sans_Mono_for_Powerline:h10
 else
-    set guifont=Liberation\ Mono\ for\ Powerline
+    set guifont=Envy\ Code\ R\ for\ Powerline
 endif
 
 let g:airline_powerline_fonts=1
