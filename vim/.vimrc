@@ -34,7 +34,7 @@ else
         set fuoptions=maxvert,maxhorz
         set lines=999 columns=999
     endif
-    set guifont=Envy\ Code\ R\ for\ Powerline:h13
+    set guifont=Sauce\ Code\ Powerline\ ExtraLight:h12
 endif
 
 let g:airline_powerline_fonts=1
