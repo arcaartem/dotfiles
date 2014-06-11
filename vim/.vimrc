@@ -11,6 +11,7 @@ set incsearch
 set laststatus=2
 set nocompatible
 set number
+set relativenumber
 set ruler
 set shiftwidth=4
 set smarttab
