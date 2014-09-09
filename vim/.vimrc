@@ -39,3 +39,6 @@ else
 endif
 
 let g:airline_powerline_fonts=1
+let g:xml_syntax_folding=1
+au FileType xml setlocal foldmethod=syntax
+
