@@ -5,7 +5,7 @@ alias gssync='git submodule sync'
 alias gpu='git push'
 alias gpl='git pull'
 alias gpr='git pull --rebase'
-alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -n 15"
+alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gpr='git pull --rebase'
 alias gd='git diff'
 alias gco='git checkout'
