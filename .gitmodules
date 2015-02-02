@@ -28,3 +28,9 @@
 [submodule "vim/vimfolder/bundle/vim-repeat"]
 	path = vim/vimfolder/bundle/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
+[submodule "vim/vimfolder/bundle/syntastic"]
+	path = vim/vimfolder/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "vim/vimfolder/bundle/vim-json"]
+	path = vim/vimfolder/bundle/vim-json
+	url = https://github.com/elzr/vim-json.git
