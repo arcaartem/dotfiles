@@ -34,3 +34,6 @@
 [submodule "vim/vimfolder/bundle/vim-json"]
 	path = vim/vimfolder/bundle/vim-json
 	url = https://github.com/elzr/vim-json.git
+[submodule "vim/vimfolder/bundle/vim-gitgutter"]
+	path = vim/vimfolder/bundle/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
