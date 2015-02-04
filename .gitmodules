@@ -37,3 +37,6 @@
 [submodule "vim/vimfolder/bundle/vim-gitgutter"]
 	path = vim/vimfolder/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "vim/vimfolder/bundle/ctrlp.vim"]
+	path = vim/vimfolder/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
