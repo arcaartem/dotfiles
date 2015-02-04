@@ -25,15 +25,15 @@ autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
 colorscheme desertEx
 
 if has("win32") || has("win16")
-    "if has("gui_running")
-    "    au GUIEnter * simalt ~x
-    "endif
+    if has("gui_running")
+        au GUIEnter * simalt ~x
+        set lines=999 columns=999
+    endif
     set term=pcansi
     set t_Co=256
     let &t_AB="\e[48;5;%dm"
     let &t_AF="\e[38;5;%dm"
     set guifont=DejaVu_Sans_Mono_for_Powerline:h10
-    set lines=50 columns=160
     let g:gitgutter_avoid_cmd_prompt_on_windows = 0
 else
     if has("gui_running")
