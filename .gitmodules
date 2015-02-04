@@ -40,3 +40,9 @@
 [submodule "vim/vimfolder/bundle/ctrlp.vim"]
 	path = vim/vimfolder/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim.git
+[submodule "vim/vimfolder/bundle/vim-misc"]
+	path = vim/vimfolder/bundle/vim-misc
+	url = https://github.com/xolox/vim-misc.git
+[submodule "vim/vimfolder/bundle/vim-shell"]
+	path = vim/vimfolder/bundle/vim-shell
+	url = https://github.com/xolox/vim-shell.git
