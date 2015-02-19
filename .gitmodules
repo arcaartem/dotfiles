@@ -46,3 +46,6 @@
 [submodule "vim/vimfolder/bundle/vim-shell"]
 	path = vim/vimfolder/bundle/vim-shell
 	url = https://github.com/xolox/vim-shell.git
+[submodule "vim/vimfolder/bundle/vim-ps1"]
+	path = vim/vimfolder/bundle/vim-ps1
+	url = https://github.com/PProvost/vim-ps1.git
