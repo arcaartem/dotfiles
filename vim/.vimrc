@@ -5,7 +5,6 @@ syntax on
 filetype plugin indent on
 
 set backspace=indent,eol,start
-set clipboard+=unnamed
 set expandtab
 set incsearch
 set laststatus=2
@@ -19,12 +18,13 @@ set softtabstop=4
 set tabstop=4
 set wildmenu
 set nowrap
+set clipboard=unnamed
 
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
 
 colorscheme desertEx
 
-if has("win32") || has("win16")
+if has("win32") || has("win16") || has("windows")
     if has("gui_running")
         au GUIEnter * simalt ~x
         set lines=999 columns=999
@@ -36,6 +36,7 @@ if has("win32") || has("win16")
     set guifont=DejaVu_Sans_Mono_for_Powerline:h10
     let g:gitgutter_avoid_cmd_prompt_on_windows = 0
 else
+    set clipboard+=unnamed
     if has("gui_running")
         set fuoptions=maxvert,maxhorz
         set lines=999 columns=999
