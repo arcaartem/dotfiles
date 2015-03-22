@@ -23,9 +23,7 @@ set clipboard=unnamed
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 
-colorscheme desertEx
-
-if has("win32") || has("win16") || has("windows")
+if has("win32") || has("win16")
     if has("gui_running")
         au GUIEnter * simalt ~x
         set lines=999 columns=999
@@ -37,6 +35,7 @@ if has("win32") || has("win16") || has("windows")
     set guifont=DejaVu_Sans_Mono_for_Powerline:h10
     let g:gitgutter_avoid_cmd_prompt_on_windows = 0
 else
+    set t_Co=256
     set clipboard+=unnamed
     if has("gui_running")
         set fuoptions=maxvert,maxhorz
@@ -45,6 +44,7 @@ else
     set guifont=Sauce\ Code\ Powerline\ ExtraLight:h12
 endif
 
+colorscheme desertEx
 
 let g:airline_powerline_fonts=1
 let g:xml_syntax_folding=1
@@ -54,3 +54,4 @@ let g:gitgutter_eager=1
 au FileType xml setlocal foldmethod=syntax
 
 map <MiddleMouse> <Nop>
+nnoremap  <silent> <ESC>[A <Nop>
