@@ -21,6 +21,7 @@ set nowrap
 set clipboard=unnamed
 
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
+autocmd BufRead,BufNewFile *.md set filetype=markdown
 
 colorscheme desertEx
 
