@@ -9,3 +9,4 @@ export dotfiles=~/dotfiles
 . $dotfiles/git/contrib/git-completion.bash
 . $dotfiles/git/contrib/git-prompt.sh
 . $dotfiles/dirb/dirb.sh
+. $dotfiles/tmux/tmuxinator.bash
