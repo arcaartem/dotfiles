@@ -54,4 +54,5 @@ let g:gitgutter_eager=1
 au FileType xml setlocal foldmethod=syntax
 
 map <MiddleMouse> <Nop>
+map <C-t> :NERDTreeToggle<CR>
 nnoremap  <silent> <ESC>[A <Nop>
