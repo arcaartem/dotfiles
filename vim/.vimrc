@@ -20,9 +20,6 @@ set wildmenu
 set nowrap
 set clipboard=unnamed
 
-autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
-autocmd BufRead,BufNewFile *.md set filetype=markdown
-
 if has("win32") || has("win16")
     if has("gui_running")
         au GUIEnter * simalt ~x
@@ -50,8 +47,11 @@ let g:airline_powerline_fonts=1
 let g:xml_syntax_folding=1
 let g:gitgutter_realtime=1
 let g:gitgutter_eager=1
+let g:mustache_abbreviations = 1
 
-au FileType xml setlocal foldmethod=syntax
+autocmd FileType xml setlocal foldmethod=syntax
+autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
+autocmd BufRead,BufNewFile *.md set filetype=markdown
 
 map <MiddleMouse> <Nop>
 map <C-t> :NERDTreeToggle<CR>
