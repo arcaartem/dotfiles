@@ -67,3 +67,6 @@
 [submodule "vim/vimfolder/bundle/tagbar"]
 	path = vim/vimfolder/bundle/tagbar
 	url = git@github.com:majutsushi/tagbar.git
+[submodule "vim/vimfolder/bundle/CoffeeTags"]
+	path = vim/vimfolder/bundle/CoffeeTags
+	url = git@github.com:lukaszkorecki/CoffeeTags.git
