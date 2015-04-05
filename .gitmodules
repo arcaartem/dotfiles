@@ -61,3 +61,6 @@
 [submodule "vim/vimfolder/bundle/emmet-vim"]
 	path = vim/vimfolder/bundle/emmet-vim
 	url = git@github.com:mattn/emmet-vim.git
+[submodule "vim/vimfolder/bundle/vim-puppet"]
+	path = vim/vimfolder/bundle/vim-puppet
+	url = git@github.com:rodjek/vim-puppet.git
