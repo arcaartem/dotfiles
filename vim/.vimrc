@@ -52,6 +52,7 @@ let g:mustache_abbreviations = 1
 autocmd FileType xml setlocal foldmethod=syntax
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
 autocmd BufRead,BufNewFile *.md set filetype=markdown
+autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
 
 map <MiddleMouse> <Nop>
 map <C-t> :NERDTreeToggle<CR>
