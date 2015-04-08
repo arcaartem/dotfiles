@@ -64,12 +64,6 @@
 [submodule "vim/vimfolder/bundle/vim-puppet"]
 	path = vim/vimfolder/bundle/vim-puppet
 	url = git@github.com:rodjek/vim-puppet.git
-[submodule "vim/vimfolder/bundle/tagbar"]
-	path = vim/vimfolder/bundle/tagbar
-	url = git@github.com:majutsushi/tagbar.git
-[submodule "vim/vimfolder/bundle/CoffeeTags"]
-	path = vim/vimfolder/bundle/CoffeeTags
-	url = git@github.com:lukaszkorecki/CoffeeTags.git
 [submodule "vim/vimfolder/bundle/ag.vim"]
 	path = vim/vimfolder/bundle/ag.vim
 	url = git@github.com:rking/ag.vim.git
