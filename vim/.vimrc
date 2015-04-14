@@ -20,6 +20,12 @@ set wildmenu
 set nowrap
 set clipboard=unnamed
 
+function! NerdTreeStartup()
+    if !exists("s:std_in") && 0 == argc()
+        NERDTree
+    end
+endfunction
+
 if has("win32") || has("win16")
     if has("gui_running")
         au GUIEnter * simalt ~x
@@ -53,7 +59,10 @@ autocmd FileType xml setlocal foldmethod=syntax
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * call NerdTreeStartup()
 
 map <MiddleMouse> <Nop>
 map <C-t> :NERDTreeToggle<CR>
+map <C-T> :NERDTreeFocus<CR>
 nnoremap  <silent> <ESC>[A <Nop>
