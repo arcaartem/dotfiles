@@ -64,5 +64,4 @@ autocmd VimEnter * call NerdTreeStartup()
 
 map <MiddleMouse> <Nop>
 map <C-t> :NERDTreeToggle<CR>
-map <C-T> :NERDTreeFocus<CR>
 nnoremap  <silent> <ESC>[A <Nop>
