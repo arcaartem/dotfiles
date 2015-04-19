@@ -22,7 +22,5 @@ export dotfiles=~/dotfiles
 
 if [ $OSTYPE == "msys" ]
 then
-    . $dotfiles/windows/microsoft/dotnet/aliases
-    . $dotfiles/windows/microsoft/system/aliases
     . $dotfiles/ssh/env
 fi
