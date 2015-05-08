@@ -3,3 +3,4 @@ export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
 alias ll='ls -alhG'
 alias ..='cd ..'
+alias tm='tmux attach'
