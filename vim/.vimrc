@@ -19,6 +19,7 @@ set tabstop=4
 set wildmenu
 set nowrap
 set clipboard=unnamed
+set cursorline
 
 function! NerdTreeStartup()
     if !exists("s:std_in") && 0 == argc()
