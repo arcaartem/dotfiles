@@ -23,6 +23,10 @@ alias gsd='git svn dcommit'
 alias grc='git rebase --continue'
 alias git-new-work-dir='~/dotfiles/git/contrib/git-new-working-dir'
 
+if hash hub 2>/dev/null; then
+    eval "$(hub alias -s)"
+fi
+
 function gg {
  git commit -v -m "$*"
 }
