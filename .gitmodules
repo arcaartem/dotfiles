@@ -82,3 +82,6 @@
 [submodule "vim/vimfolder/bundle/python-mode"]
 	path = vim/vimfolder/bundle/python-mode
 	url = git@github.com:klen/python-mode.git
+[submodule "vim/vimfolder/bundle/vim-go"]
+	path = vim/vimfolder/bundle/vim-go
+	url = git@github.com:fatih/vim-go.git
