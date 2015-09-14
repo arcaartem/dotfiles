@@ -2,14 +2,13 @@ alias gs='git status'
 alias gss='git submodule status'
 alias gsu='git submodule update'
 alias gssync='git submodule sync'
-alias gpu='git push'
 alias gpl='git pull'
+alias gpu='git push'
 alias gpr='git pull --rebase'
 alias gl="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias gpr='git pull --rebase'
 alias gd='git diff'
-alias gco='git checkout'
 alias gcp='git cherry-pick'
+alias gco='git checkout'
 alias gra='git rebase --abort'
 alias grc='git rebase --continue'
 alias gb='git branch'
@@ -22,6 +21,9 @@ alias gsr='git svn rebase'
 alias gsd='git svn dcommit'
 alias grc='git rebase --continue'
 alias git-new-work-dir='~/dotfiles/git/contrib/git-new-working-dir'
+
+__git_complete gco _git_checkout
+__git_complete gpu _git_push
 
 if hash hub 2>/dev/null; then
     eval "$(hub alias -s)"
