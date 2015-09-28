@@ -94,3 +94,9 @@
 [submodule "vim/vimfolder/bundle/omnisharp-vim"]
 	path = vim/vimfolder/bundle/omnisharp-vim
 	url = https://github.com/OmniSharp/omnisharp-vim.git
+[submodule "vim/vimfolder/bundle/vim-javascript"]
+	path = vim/vimfolder/bundle/vim-javascript
+	url = git@github.com:pangloss/vim-javascript.git
+[submodule "vim/vimfolder/bundle/vim-javascript-syntax"]
+	path = vim/vimfolder/bundle/vim-javascript-syntax
+	url = git@github.com:jelera/vim-javascript-syntax.git
