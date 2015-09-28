@@ -88,3 +88,9 @@
 [submodule "vim/vimfolder/bundle/YouCompleteMe"]
 	path = vim/vimfolder/bundle/YouCompleteMe
 	url = git@github.com:Valloric/YouCompleteMe.git
+[submodule "vim/vimfolder/bundle/vim-dispatch"]
+	path = vim/vimfolder/bundle/vim-dispatch
+	url = git://github.com/tpope/vim-dispatch.git
+[submodule "vim/vimfolder/bundle/omnisharp-vim"]
+	path = vim/vimfolder/bundle/omnisharp-vim
+	url = https://github.com/OmniSharp/omnisharp-vim.git
