@@ -63,6 +63,7 @@ let g:ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
 autocmd FileType xml setlocal foldmethod=syntax
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
 autocmd Filetype jade setlocal shiftwidth=2 tabstop=2
+autocmd Filetype javascript setlocal shiftwidth=2 tabstop=2
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufNewFile,BufReadPost *.coffee setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd StdinReadPre * let s:std_in=1
