@@ -7,13 +7,16 @@ filetype plugin indent on
 set backspace=indent,eol,start
 set expandtab
 set incsearch
+set hlsearch
+set lazyredraw
+set showmatch
 set laststatus=2
 set nocompatible
 set number
 set relativenumber
 set ruler
-set shiftwidth=4
 set smarttab
+set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 set wildmenu
@@ -54,13 +57,14 @@ let g:airline_powerline_fonts=1
 let g:xml_syntax_folding=1
 let g:gitgutter_realtime=1
 let g:gitgutter_eager=1
-let g:mustache_abbreviations = 1
+let g:mustache_abbreviations=1
+let g:ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
 
 autocmd FileType xml setlocal foldmethod=syntax
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
 autocmd Filetype jade setlocal shiftwidth=2 tabstop=2
 autocmd BufRead,BufNewFile *.md set filetype=markdown
-autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+autocmd BufNewFile,BufReadPost *.coffee setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * call NerdTreeStartup()
 
