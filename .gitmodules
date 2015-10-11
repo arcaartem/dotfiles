@@ -100,3 +100,6 @@
 [submodule "vim/vimfolder/bundle/vim-javascript-syntax"]
 	path = vim/vimfolder/bundle/vim-javascript-syntax
 	url = git@github.com:jelera/vim-javascript-syntax.git
+[submodule "vim/vimfolder/bundle/rust.vim"]
+	path = vim/vimfolder/bundle/rust.vim
+	url = https://github.com/rust-lang/rust.vim.git
