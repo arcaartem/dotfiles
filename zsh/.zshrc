@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/arcaartem/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -58,6 +58,14 @@ export PATH="/usr/local/sbin:/Users/arcaartem/.gvm/pkgsets/go1.5/work/bin:/Users
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+
+if [ -e ~/.zsh_local ]
+then
+    source ~/.zsh_local
+fi
+
+export EDITOR='vim'
+export LANG=en_GB.UTF-8
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
