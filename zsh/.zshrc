@@ -50,12 +50,12 @@ ZSH_THEME="bullet-train"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew bundler docker encode64 gem history npm nyan osx ruby screen sudo tmux tmuxinator vagrant httpie git-extras)
+plugins=(autojump colored-man-pages git brew bundler docker encode64 gem history npm nyan ruby screen sudo tmux tmuxinator vagrant httpie git-extras)
 
 # User configuration
 
 export PATH="/usr/local/sbin:/Users/arcaartem/.gvm/pkgsets/go1.5/work/bin:/Users/arcaartem/.gvm/pkgsets/go1.5/work/overlay/bin:/Users/arcaartem/.gvm/pkgsets/go1.5/work/bin:/Users/arcaartem/.gvm/pkgsets/go1.5/global/bin:/Users/arcaartem/.gvm/gos/go1.5/bin:/Users/arcaartem/.gvm/pkgsets/go1.5/global/overlay/bin:/Users/arcaartem/.gvm/bin:/Users/arcaartem/.gvm/bin:/Users/arcaartem/.rbenv/shims:/Users/arcaartem/.nvm/versions/node/v4.1.1/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/bin:/opt/X11/bin:/var/cfengine/bin:/usr/local/go/bin:/usr/local/MacGPG2/bin:/Users/arcaartem/Documents/Git/Nim/bin:/usr/local/packer:/Applications/VMware Fusion.app/Contents/Library"
-# export MANPATH="/usr/local/man:$MANPATH"
+export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
 
