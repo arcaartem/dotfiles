@@ -6,7 +6,7 @@ export ZSH=~/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="agnoster"
+ZSH_THEME="bullet-train"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -91,3 +91,20 @@ export LANG=en_GB.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
+    . ~/.config/exercism/exercism_completion.zsh
+fi
+
+export NVM_DIR="/Users/arcaartem/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+eval "$(rbenv init -)"
+[[ -s "/Users/arcaartem/.gvm/scripts/gvm" ]] && source "/Users/arcaartem/.gvm/scripts/gvm"
+export PATH=/usr/local/sbin:/opt/local/bin:/opt/local/sbin:$PATH
+
+alias fuck='$(thefuck $(fc -ln -1))'
+
+# Bullet-train theme options
+BULLETTRAIN_STATUS_EXIT_SHOW=true
+BULLETTRAIN_RUBY_SHOW=false
