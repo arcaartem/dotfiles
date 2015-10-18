@@ -54,7 +54,9 @@ plugins=(autojump colored-man-pages git brew bundler docker encode64 gem history
 
 # User configuration
 
-export PATH="/usr/local/sbin:/Users/arcaartem/.gvm/pkgsets/go1.5/work/bin:/Users/arcaartem/.gvm/pkgsets/go1.5/work/overlay/bin:/Users/arcaartem/.gvm/pkgsets/go1.5/work/bin:/Users/arcaartem/.gvm/pkgsets/go1.5/global/bin:/Users/arcaartem/.gvm/gos/go1.5/bin:/Users/arcaartem/.gvm/pkgsets/go1.5/global/overlay/bin:/Users/arcaartem/.gvm/bin:/Users/arcaartem/.gvm/bin:/Users/arcaartem/.rbenv/shims:/Users/arcaartem/.nvm/versions/node/v4.1.1/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:~/bin:/opt/X11/bin:/var/cfengine/bin:/usr/local/go/bin:/usr/local/MacGPG2/bin:/Users/arcaartem/Documents/Git/Nim/bin:/usr/local/packer:/Applications/VMware Fusion.app/Contents/Library"
+export HOME="/Users/$(whoami)"
+local GVM="$HOME/.gvm"
+export PATH="/usr/local/sbin:$GVM/pkgsets/go1.5/work/bin:$GVM/pkgsets/go1.5/work/overlay/bin:$GVM/pkgsets/go1.5/work/bin:$GVM/pkgsets/go1.5/global/bin:$GVM/gos/go1.5/bin:$GVM/pkgsets/go1.5/global/overlay/bin:$GVM/bin:$HOME/.rbenv/shims:$HOME/.nvm/versions/node/v4.1.1/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin:/opt/X11/bin:/usr/local/MacGPG2/bin:/Applications/VMware Fusion.app/Contents/Library"
 export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -96,12 +98,11 @@ if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
     . ~/.config/exercism/exercism_completion.zsh
 fi
 
-export NVM_DIR="/Users/arcaartem/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 eval "$(rbenv init -)"
-[[ -s "/Users/arcaartem/.gvm/scripts/gvm" ]] && source "/Users/arcaartem/.gvm/scripts/gvm"
-export PATH=/usr/local/sbin:/opt/local/bin:/opt/local/sbin:$PATH
+[[ -s "$GVM/scripts/gvm" ]] && source "$GVM/scripts/gvm"
 
 alias fuck='$(thefuck $(fc -ln -1))'
 
