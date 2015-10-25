@@ -107,6 +107,7 @@ eval "$(rbenv init -)"
 alias fuck='$(thefuck $(fc -ln -1))'
 
 # Bullet-train theme options
-BULLETTRAIN_STATUS_EXIT_SHOW=true
 BULLETTRAIN_RUBY_SHOW=false
-BULLETTRAIN_IS_SSH_CLIENT=true
+BULLETTRAIN_CONTEXT_SHOW=true
+BULLETTRAIN_CONTEXT_DEFAULT_USER=$(whoami)
+BULLETTRAIN_PROMPT_CHAR=☉
