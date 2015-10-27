@@ -43,6 +43,7 @@ if has("win32") || has("win16")
     let &t_AF="\e[38;5;%dm"
     set guifont=DejaVu_Sans_Mono_for_Powerline:h10
     let g:gitgutter_avoid_cmd_prompt_on_windows = 0
+    set directory=%TEMP%
 else
     set t_Co=256
     set clipboard+=unnamed
@@ -51,6 +52,7 @@ else
         set lines=999 columns=999
     endif
     set guifont=Sauce\ Code\ Powerline\ ExtraLight:h12
+    set directory=/tmp
 endif
 
 colorscheme desertEx
