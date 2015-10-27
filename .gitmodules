@@ -103,3 +103,6 @@
 [submodule "vim/vimfolder/bundle/rust.vim"]
 	path = vim/vimfolder/bundle/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
+[submodule "vim/vimfolder/bundle/vim-tmux-navigator"]
+	path = vim/vimfolder/bundle/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git
