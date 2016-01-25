@@ -72,7 +72,9 @@ autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufNewFile,BufReadPost *.coffee setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * call NerdTreeStartup()
+autocmd filetype crontab setlocal nobackup nowritebackup
 
 map <MiddleMouse> <Nop>
 map <C-t> :NERDTreeToggle<CR>
 nnoremap  <silent> <ESC>[A <Nop>
+
