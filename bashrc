@@ -9,8 +9,6 @@ export dotfiles=~/dotfiles
 . $dotfiles/ruby/aliases
 
 # Git
-. $dotfiles/git/contrib/git-completion.bash
-. $dotfiles/git/contrib/git-prompt.sh
 . $dotfiles/git/aliases
 . $dotfiles/git/env
 
