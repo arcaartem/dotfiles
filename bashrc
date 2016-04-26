@@ -10,7 +10,6 @@ export dotfiles=~/dotfiles
 
 # Git
 . $dotfiles/git/aliases
-. $dotfiles/git/env
 
 # Dir Bookmarks
 . $dotfiles/dirb/dirb.sh
