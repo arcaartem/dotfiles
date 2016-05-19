@@ -121,3 +121,6 @@
 [submodule "vim/vimfolder/bundle/neocomplete.vim"]
 	path = vim/vimfolder/bundle/neocomplete.vim
 	url = https://github.com/Shougo/neocomplete.vim.git
+[submodule "vim/vimfolder/bundle/elm.vim"]
+	path = vim/vimfolder/bundle/elm.vim
+	url = https://github.com/lambdatoast/elm.vim.git
