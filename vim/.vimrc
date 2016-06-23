@@ -25,6 +25,7 @@ set wildmenu
 set nowrap
 set clipboard=unnamed
 set cursorline
+set listchars=eol:$,nbsp:+,tab:>.,extends:>,precedes:<,trail:-
 
 function! NerdTreeStartup()
     if !exists("s:std_in") && 0 == argc()
@@ -76,5 +77,6 @@ autocmd filetype crontab setlocal nobackup nowritebackup
 
 map <MiddleMouse> <Nop>
 map <C-t> :NERDTreeToggle<CR>
+nmap <leader>l :set list!<CR>
 nnoremap  <silent> <ESC>[A <Nop>
 
