@@ -124,3 +124,12 @@
 [submodule "vim/vimfolder/bundle/elm.vim"]
 	path = vim/vimfolder/bundle/elm.vim
 	url = https://github.com/lambdatoast/elm.vim.git
+[submodule "vim/vimfolder/bundle/vim-closetag"]
+	path = vim/vimfolder/bundle/vim-closetag
+	url = https://github.com/alvan/vim-closetag.git
+[submodule "vim/vimfolder/bundle/vim-autoclose"]
+	path = vim/vimfolder/bundle/vim-autoclose
+	url = https://github.com/Townk/vim-autoclose.git
+[submodule "vim/vimfolder/bundle/vim-matchit"]
+	path = vim/vimfolder/bundle/vim-matchit
+	url = https://github.com/edsono/vim-matchit.git
