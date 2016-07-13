@@ -66,6 +66,7 @@ let g:gitgutter_eager=1
 let g:mustache_abbreviations=1
 let g:ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
 let g:syntastic_javascript_checkers = ["eslint"]
+let g:jsx_ext_required = 0
 
 autocmd FileType xml setlocal foldmethod=syntax
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
