@@ -26,6 +26,7 @@ set nowrap
 set clipboard=unnamed
 set cursorline
 set listchars=eol:$,nbsp:+,tab:>.,extends:>,precedes:<,trail:-
+set mouse=a
 
 function! NerdTreeStartup()
     if !exists("s:std_in") && 0 == argc()
