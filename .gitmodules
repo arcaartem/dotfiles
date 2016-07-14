@@ -139,3 +139,6 @@
 [submodule "vim/vimfolder/bundle/vim-jsx"]
 	path = vim/vimfolder/bundle/vim-jsx
 	url = https://github.com/mxw/vim-jsx.git
+[submodule "vim/vimfolder/bundle/vim-node"]
+	path = vim/vimfolder/bundle/vim-node
+	url = https://github.com/moll/vim-node.git
