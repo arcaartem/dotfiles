@@ -142,3 +142,6 @@
 [submodule "vim/vimfolder/bundle/vim-node"]
 	path = vim/vimfolder/bundle/vim-node
 	url = https://github.com/moll/vim-node.git
+[submodule "vim/vimfolder/bundle/javascript-libraries-syntax.vim"]
+	path = vim/vimfolder/bundle/javascript-libraries-syntax.vim
+	url = https://github.com/othree/javascript-libraries-syntax.vim.git
