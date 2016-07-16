@@ -34,20 +34,19 @@ function! NerdTreeStartup()
     end
 endfunction
 
+set t_Co=256
 if has("win32") || has("win16")
     if has("gui_running")
         au GUIEnter * simalt ~x
         set lines=999 columns=999
     endif
     set term=pcansi
-    set t_Co=256
     let &t_AB="\e[48;5;%dm"
     let &t_AF="\e[38;5;%dm"
     set guifont=DejaVu_Sans_Mono_for_Powerline:h10
     let g:gitgutter_avoid_cmd_prompt_on_windows = 0
     set directory=%TEMP%
 else
-    set t_Co=256
     set clipboard+=unnamed
     if has("gui_running")
         set fuoptions=maxvert,maxhorz
