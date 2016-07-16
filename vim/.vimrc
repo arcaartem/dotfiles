@@ -3,25 +3,15 @@ let g:pathogen_disabled = ['omnisharp-vim', 'vim-dispatch']
 execute pathogen#infect()
 execute pathogen#helptags()
 
-syntax on
-filetype plugin indent on
-
-set backspace=indent,eol,start
 set expandtab
-set incsearch
 set hlsearch
 set lazyredraw
-set showmatch
-set laststatus=2
 set nocompatible
 set number
 set relativenumber
-set ruler
-set smarttab
 set shiftwidth=4
 set softtabstop=4
 set tabstop=4
-set wildmenu
 set nowrap
 set clipboard=unnamed
 set cursorline
