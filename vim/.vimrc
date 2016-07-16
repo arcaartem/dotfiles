@@ -56,6 +56,7 @@ let g:mustache_abbreviations=1
 let g:ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
 let g:syntastic_javascript_checkers = ["eslint"]
 let g:jsx_ext_required = 0
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.js"
 
 autocmd FileType xml setlocal foldmethod=syntax
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
