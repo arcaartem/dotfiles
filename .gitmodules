@@ -154,3 +154,9 @@
 [submodule "vim/vimfolder/bundle/vim-addon-mw-utils"]
 	path = vim/vimfolder/bundle/vim-addon-mw-utils
 	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "vim/vimfolder/bundle/vim-snippets"]
+	path = vim/vimfolder/bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
+[submodule "vim/vimfolder/bundle/vim-react-es6-snippets"]
+	path = vim/vimfolder/bundle/vim-react-es6-snippets
+	url = https://github.com/bentayloruk/vim-react-es6-snippets.git
