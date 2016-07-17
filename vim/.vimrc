@@ -1,7 +1,4 @@
-let g:pathogen_disabled = ['omnisharp-vim', 'vim-dispatch']
-
 execute pathogen#infect()
-execute pathogen#helptags()
 
 set expandtab
 set hlsearch
