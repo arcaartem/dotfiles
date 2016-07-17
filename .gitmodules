@@ -124,9 +124,6 @@
 [submodule "vim/vimfolder/bundle/vim-closetag"]
 	path = vim/vimfolder/bundle/vim-closetag
 	url = https://github.com/alvan/vim-closetag.git
-[submodule "vim/vimfolder/bundle/vim-autoclose"]
-	path = vim/vimfolder/bundle/vim-autoclose
-	url = https://github.com/Townk/vim-autoclose.git
 [submodule "vim/vimfolder/bundle/vim-matchit"]
 	path = vim/vimfolder/bundle/vim-matchit
 	url = https://github.com/edsono/vim-matchit.git
@@ -145,3 +142,6 @@
 [submodule "vim/vimfolder/bundle/javascript-libraries-syntax.vim"]
 	path = vim/vimfolder/bundle/javascript-libraries-syntax.vim
 	url = https://github.com/othree/javascript-libraries-syntax.vim.git
+[submodule "vim/vimfolder/bundle/auto-pairs"]
+	path = vim/vimfolder/bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
