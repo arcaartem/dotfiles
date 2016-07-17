@@ -14,6 +14,8 @@ set clipboard=unnamed
 set cursorline
 set listchars=eol:$,nbsp:+,tab:>.,extends:>,precedes:<,trail:-
 set mouse=a
+set timeoutlen=500
+set ttimeoutlen=-1
 
 function! NerdTreeStartup()
     if !exists("s:std_in") && 0 == argc()
