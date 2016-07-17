@@ -145,3 +145,6 @@
 [submodule "vim/vimfolder/bundle/auto-pairs"]
 	path = vim/vimfolder/bundle/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "vim/vimfolder/bundle/neosnippet.vim"]
+	path = vim/vimfolder/bundle/neosnippet.vim
+	url = https://github.com/Shougo/neosnippet.vim.git
