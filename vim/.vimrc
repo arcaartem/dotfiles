@@ -59,6 +59,7 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.js"
 let g:neocomplete#enable_at_startup = 1
 let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_smart_case = 1
+
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" :
         \ <SID>check_back_space() ? "\<TAB>" :
         \ neocomplete#start_manual_complete()
@@ -71,11 +72,10 @@ endfunction"}}}
 " <CR>: close popup and save indent.
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function()
-  return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
+  " return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
   " For no inserting <CR> key.
-  "return pumvisible() ? "\<C-y>" : "\<CR>"
+  return pumvisible() ? "\<C-y>" : "\<CR>"
 endfunction
-" <C-h>, <BS>: close popup and delete backword char.
 inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
@@ -90,6 +90,8 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * call NerdTreeStartup()
 autocmd filetype crontab setlocal nobackup nowritebackup
 
+imap <C-L> <Plug>snipMateNextOrTrigger
+smap <C-L> <Plug>snipMateNextOrTrigger
 map <MiddleMouse> <Nop>
 map <C-t> :NERDTreeToggle<CR>
 nmap <leader>l :set list!<CR>
