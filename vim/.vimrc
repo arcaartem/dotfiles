@@ -59,7 +59,6 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.js"
 let g:neocomplete#enable_at_startup = 1
 let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_smart_case = 1
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" :
         \ <SID>check_back_space() ? "\<TAB>" :
         \ neocomplete#start_manual_complete()
@@ -79,6 +78,7 @@ endfunction
 " <C-h>, <BS>: close popup and delete backword char.
 inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
 
 autocmd FileType xml setlocal foldmethod=syntax
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
@@ -94,4 +94,3 @@ map <MiddleMouse> <Nop>
 map <C-t> :NERDTreeToggle<CR>
 nmap <leader>l :set list!<CR>
 nnoremap  <silent> <ESC>[A <Nop>
-
