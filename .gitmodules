@@ -160,3 +160,6 @@
 [submodule "vim/vimfolder/bundle/vim-react-es6-snippets"]
 	path = vim/vimfolder/bundle/vim-react-es6-snippets
 	url = https://github.com/bentayloruk/vim-react-es6-snippets.git
+[submodule "vim/vimfolder/bundle/vim-ledger"]
+	path = vim/vimfolder/bundle/vim-ledger
+	url = https://github.com/ledger/vim-ledger.git
