@@ -163,3 +163,6 @@
 [submodule "vim/vimfolder/bundle/vim-ledger"]
 	path = vim/vimfolder/bundle/vim-ledger
 	url = https://github.com/ledger/vim-ledger.git
+[submodule "vim/vimfolder/bundle/vim-plist"]
+	path = vim/vimfolder/bundle/vim-plist
+	url = git://github.com/darfink/vim-plist.git
