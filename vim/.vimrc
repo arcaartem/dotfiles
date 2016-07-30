@@ -59,6 +59,7 @@ let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.js"
 let g:neocomplete#enable_at_startup = 1
 let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_smart_case = 1
+let g:used_javascript_libs = 'underscore,react,jquery'
 
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" :
         \ <SID>check_back_space() ? "\<TAB>" :
@@ -89,6 +90,7 @@ autocmd BufNewFile,BufReadPost *.coffee setlocal shiftwidth=2 tabstop=2 expandta
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * call NerdTreeStartup()
 autocmd filetype crontab setlocal nobackup nowritebackup
+autocmd BufRead,BufNewFile *.ledger set filetype=ledger
 
 imap <C-L> <Plug>snipMateNextOrTrigger
 smap <C-L> <Plug>snipMateNextOrTrigger
@@ -96,3 +98,13 @@ map <MiddleMouse> <Nop>
 map <C-t> :NERDTreeToggle<CR>
 nmap <leader>l :set list!<CR>
 nnoremap  <silent> <ESC>[A <Nop>
+
+function! Multiple_cursors_before()
+    exe 'NeoCompleteLock'
+    echo 'Disabled autocomplete'
+endfunction
+
+function! Multiple_cursors_after()
+    exe 'NeoCompleteUnlock'
+    echo 'Enabled autocomplete'
+endfunction
