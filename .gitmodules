@@ -166,3 +166,6 @@
 [submodule "vim/vimfolder/bundle/vim-plist"]
 	path = vim/vimfolder/bundle/vim-plist
 	url = git://github.com/darfink/vim-plist.git
+[submodule "vim/vimfolder/bundle/vim-es7"]
+	path = vim/vimfolder/bundle/vim-es7
+	url = git@github.com:kern/vim-es7.git
