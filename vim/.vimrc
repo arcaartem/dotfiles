@@ -24,6 +24,7 @@ function! NerdTreeStartup()
 endfunction
 
 set t_Co=256
+set ttymouse=xterm2
 if has("win32") || has("win16")
     if has("gui_running")
         au GUIEnter * simalt ~x
