@@ -49,7 +49,6 @@ endif
 colorscheme desertEx
 
 let g:airline_powerline_fonts=1
-let g:xml_syntax_folding=1
 let g:gitgutter_realtime=1
 let g:gitgutter_eager=1
 let g:mustache_abbreviations=1
@@ -82,7 +81,7 @@ inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
 
-autocmd FileType xml setlocal foldmethod=syntax
+autocmd FileType xml call SetXmlFolding()
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
 autocmd Filetype jade setlocal shiftwidth=2 tabstop=2
 autocmd Filetype javascript setlocal shiftwidth=2 tabstop=2
@@ -92,6 +91,11 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * call NerdTreeStartup()
 autocmd filetype crontab setlocal nobackup nowritebackup
 autocmd BufRead,BufNewFile *.ledger set filetype=ledger
+
+function! SetXmlFolding()
+    setlocal foldmethod=syntax
+    let g:xml_syntax_folding=1
+endfunction
 
 imap <C-L> <Plug>snipMateNextOrTrigger
 smap <C-L> <Plug>snipMateNextOrTrigger
