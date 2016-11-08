@@ -99,3 +99,4 @@ BULLETTRAIN_CONTEXT_SHOW=true
 BULLETTRAIN_CONTEXT_DEFAULT_USER=$(whoami)
 BULLETTRAIN_PROMPT_CHAR=☉
 
+source ~/dotfiles/zsh/tmuxinator.zsh
