@@ -16,6 +16,7 @@ set listchars=eol:$,nbsp:+,tab:>.,extends:>,precedes:<,trail:-
 set mouse=a
 set timeoutlen=500
 set ttimeoutlen=-1
+set autowrite
 
 function! NerdTreeStartup()
     if !exists("s:std_in") && 0 == argc()
@@ -91,6 +92,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * call NerdTreeStartup()
 autocmd filetype crontab setlocal nobackup nowritebackup
 autocmd BufRead,BufNewFile *.ledger set filetype=ledger
+autocmd FocusLost * silent! wa
 
 function! SetXmlFolding()
     setlocal foldmethod=syntax
