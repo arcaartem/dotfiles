@@ -178,3 +178,6 @@
 [submodule "vim/vimfolder/bundle/vimwiki"]
 	path = vim/vimfolder/bundle/vimwiki
 	url = https://github.com/vimwiki/vimwiki.git
+[submodule "vim/vimfolder/bundle/html5-syntax.vim"]
+	path = vim/vimfolder/bundle/html5-syntax.vim
+	url = git@github.com:othree/html5-syntax.vim.git
