@@ -104,7 +104,12 @@ smap <C-L> <Plug>snipMateNextOrTrigger
 map <MiddleMouse> <Nop>
 map <C-t> :NERDTreeToggle<CR>
 nmap <leader>l :set list!<CR>
-nnoremap  <silent> <ESC>[A <Nop>
+" No idea what this is but vim weirds out without it when switching panes
+" under tmux
+nnoremap <silent> <esc>[A <Nop> 
+
+" To clear last search highlight when pressing ESC
+nnoremap <silent> <esc> :noh<cr><esc>
 
 function! Multiple_cursors_before()
     exe 'NeoCompleteLock'
