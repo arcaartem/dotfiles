@@ -211,3 +211,6 @@
 [submodule "tmux/tmuxfolder/plugins/vim-tmux-navigator"]
 	path = tmux/tmuxfolder/plugins/vim-tmux-navigator
 	url = https://git::@github.com/christoomey/vim-tmux-navigator
+[submodule "vim/vimfolder/bundle/nerdcommenter"]
+	path = vim/vimfolder/bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git

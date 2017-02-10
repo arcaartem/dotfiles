@@ -61,6 +61,9 @@ let g:neocomplete#enable_at_startup = 1
 let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_smart_case = 1
 let g:used_javascript_libs = 'underscore,react,jquery'
+let g:NERDSpaceDelims = 1
+let g:NERDCommentEmptyLines = 1
+let g:NERDTrimTrailingWhitespace = 1
 
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" :
         \ <SID>check_back_space() ? "\<TAB>" :
