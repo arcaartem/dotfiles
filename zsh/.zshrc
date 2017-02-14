@@ -52,14 +52,13 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(autojump colored-man-pages git brew bundler docker gem history npm ruby screen sudo tmux tmuxinator vagrant httpie git-extras)
 
+source $ZSH/oh-my-zsh.sh
+
 # User configuration
 
 export HOME="$(eval echo ~$USER)"
-local GVM="$HOME/.gvm"
-export PATH="/usr/local/sbin:$GVM/pkgsets/go1.5/work/bin:$GVM/pkgsets/go1.5/work/overlay/bin:$GVM/pkgsets/go1.5/work/bin:$GVM/pkgsets/go1.5/global/bin:$GVM/gos/go1.5/bin:$GVM/pkgsets/go1.5/global/overlay/bin:$GVM/bin:$HOME/.rbenv/shims:$HOME/.nvm/versions/node/v4.1.1/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin:/opt/X11/bin:/usr/local/MacGPG2/bin:/Applications/VMware Fusion.app/Contents/Library"
+export PATH="/usr/local/sbin:$HOME/.rbenv/shims:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin:/opt/X11/bin:/usr/local/MacGPG2/bin:/Applications/VMware Fusion.app/Contents/Library"
 export MANPATH="/usr/local/man:$MANPATH"
-
-source $ZSH/oh-my-zsh.sh
 
 if [ -e ~/.zsh_local ]
 then
@@ -69,17 +68,7 @@ fi
 export EDITOR='vim'
 export LANG=en_GB.UTF-8
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
-unalias run-help
-autoload run-help
-HELPDIR=/usr/local/share/zsh/help
 
 if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
     . ~/.config/exercism/exercism_completion.zsh
@@ -89,9 +78,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 eval "$(rbenv init -)"
-[[ -s "$GVM/scripts/gvm" ]] && source "$GVM/scripts/gvm"
-
-alias fuck='$(thefuck $(fc -ln -1))'
 
 # Bullet-train theme options
 BULLETTRAIN_RUBY_SHOW=false
