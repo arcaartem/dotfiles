@@ -181,36 +181,9 @@
 [submodule "vim/vimfolder/bundle/html5-syntax.vim"]
 	path = vim/vimfolder/bundle/html5-syntax.vim
 	url = git@github.com:othree/html5-syntax.vim.git
-[submodule "tmux/tmuxfolder/plugins/maglev"]
-	path = tmux/tmuxfolder/plugins/maglev
-	url = https://git::@github.com/caiogondim/maglev
-[submodule "tmux/tmuxfolder/plugins/tmux-battery"]
-	path = tmux/tmuxfolder/plugins/tmux-battery
-	url = https://git::@github.com/tmux-plugins/tmux-battery
-[submodule "tmux/tmuxfolder/plugins/tmux-copycat"]
-	path = tmux/tmuxfolder/plugins/tmux-copycat
-	url = https://git::@github.com/tmux-plugins/tmux-copycat
-[submodule "tmux/tmuxfolder/plugins/tmux-cpu"]
-	path = tmux/tmuxfolder/plugins/tmux-cpu
-	url = https://git::@github.com/tmux-plugins/tmux-cpu
-[submodule "tmux/tmuxfolder/plugins/tmux-open"]
-	path = tmux/tmuxfolder/plugins/tmux-open
-	url = https://git::@github.com/tmux-plugins/tmux-open
-[submodule "tmux/tmuxfolder/plugins/tmux-pain-control"]
-	path = tmux/tmuxfolder/plugins/tmux-pain-control
-	url = https://git::@github.com/tmux-plugins/tmux-pain-control
-[submodule "tmux/tmuxfolder/plugins/tmux-sensible"]
-	path = tmux/tmuxfolder/plugins/tmux-sensible
-	url = https://git::@github.com/tmux-plugins/tmux-sensible
-[submodule "tmux/tmuxfolder/plugins/tmux-yank"]
-	path = tmux/tmuxfolder/plugins/tmux-yank
-	url = https://git::@github.com/tmux-plugins/tmux-yank
-[submodule "tmux/tmuxfolder/plugins/tpm"]
-	path = tmux/tmuxfolder/plugins/tpm
-	url = https://github.com/tmux-plugins/tpm
-[submodule "tmux/tmuxfolder/plugins/vim-tmux-navigator"]
-	path = tmux/tmuxfolder/plugins/vim-tmux-navigator
-	url = https://git::@github.com/christoomey/vim-tmux-navigator
 [submodule "vim/vimfolder/bundle/nerdcommenter"]
 	path = vim/vimfolder/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "tmux/tmuxfolder/plugins/tpm"]
+	path = tmux/tmuxfolder/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
