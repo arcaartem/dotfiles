@@ -57,7 +57,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export HOME="$(eval echo ~$USER)"
-export PATH="/usr/local/sbin:$HOME/.rbenv/shims:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin:/opt/X11/bin:/usr/local/MacGPG2/bin:/Applications/VMware Fusion.app/Contents/Library"
+export PATH="/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin:/opt/X11/bin:/usr/local/MacGPG2/bin:/Applications/VMware Fusion.app/Contents/Library"
 export MANPATH="/usr/local/man:$MANPATH"
 
 if [ -e ~/.zsh_local ]
@@ -77,7 +77,6 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
-eval "$(rbenv init -)"
 
 # Bullet-train theme options
 BULLETTRAIN_RUBY_SHOW=false
@@ -86,3 +85,11 @@ BULLETTRAIN_CONTEXT_DEFAULT_USER=$(whoami)
 BULLETTRAIN_PROMPT_CHAR=☉
 
 source ~/dotfiles/zsh/tmuxinator.zsh
+
+PATH="/Users/aartem/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/aartem/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/aartem/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/aartem/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/aartem/perl5"; export PERL_MM_OPT;
+
+eval "$(rbenv init -)"
