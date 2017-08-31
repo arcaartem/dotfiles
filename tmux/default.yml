@@ -1,4 +1,4 @@
-session_name: 4-pane-split
+session_name: default
 windows:
 - window_name: dev window
   panes:
