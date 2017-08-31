@@ -81,7 +81,7 @@ function lockscreen() {
     /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
 }
 
-alias git='hub'
+eval "$(hub alias -s)"
 
 export NVM_DIR="$HOME/.nvm"
 nvm() {
