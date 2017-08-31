@@ -25,7 +25,6 @@ ZSH_THEME="bullet-train"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -64,6 +63,7 @@ export LANG=en_GB.UTF-8
 export DEFAULT_USER=aartem
 export HOMEBREW_NO_ANALYTICS=1
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export DISABLE_AUTO_TITLE="true"
 
 # Bullet-train theme options
 BULLETTRAIN_RUBY_SHOW=false

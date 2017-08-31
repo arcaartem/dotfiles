@@ -1,0 +1,8 @@
+session_name: 4-pane-split
+windows:
+- window_name: dev window
+  panes:
+    - null
+- window_name: test window
+  panes:
+    - null
