@@ -25,7 +25,7 @@ ZSH_THEME="bullet-train"
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -50,7 +50,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump colored-man-pages git brew bundler docker gem history npm ruby screen sudo tmux tmuxinator vagrant httpie git-extras)
+plugins=(autojump colored-man-pages git brew bundler docker gem history npm ruby screen sudo tmux vagrant httpie git-extras)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -59,24 +59,11 @@ source $ZSH/oh-my-zsh.sh
 export HOME="$(eval echo ~$USER)"
 export PATH="/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin:/opt/X11/bin:/usr/local/MacGPG2/bin:/Applications/VMware Fusion.app/Contents/Library"
 export MANPATH="/usr/local/man:$MANPATH"
-
-if [ -e ~/.zsh_local ]
-then
-    source ~/.zsh_local
-fi
-
 export EDITOR='vim'
 export LANG=en_GB.UTF-8
-
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
-
-if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
-    . ~/.config/exercism/exercism_completion.zsh
-fi
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
+export DEFAULT_USER=aartem
+export HOMEBREW_NO_ANALYTICS=1
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 # Bullet-train theme options
 BULLETTRAIN_RUBY_SHOW=false
@@ -84,12 +71,28 @@ BULLETTRAIN_CONTEXT_SHOW=true
 BULLETTRAIN_CONTEXT_DEFAULT_USER=$(whoami)
 BULLETTRAIN_PROMPT_CHAR=☉
 
-source ~/dotfiles/zsh/tmuxinator.zsh
-
 PATH="/Users/aartem/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/Users/aartem/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/Users/aartem/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/Users/aartem/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/aartem/perl5"; export PERL_MM_OPT;
 
+function lockscreen() {
+    /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
+}
+
+alias git='hub'
+
+export NVM_DIR="$HOME/.nvm"
+nvm() {
+    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+    nvm "${@}"
+}
+
+j() {
+    [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+}
+
 eval "$(rbenv init -)"
+
+[ -e ~/.zsh_local ] && .  ~/.zsh_local
