@@ -91,10 +91,7 @@ function lockscreen() {
 eval "$(hub alias -s)"
 
 export NVM_DIR="$HOME/.nvm"
-nvm() {
-    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-    nvm "${@}"
-}
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 eval "$(rbenv init -)"
 
