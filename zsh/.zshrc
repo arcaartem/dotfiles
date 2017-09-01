@@ -66,10 +66,17 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export DISABLE_AUTO_TITLE="true"
 
 # Bullet-train theme options
-BULLETTRAIN_RUBY_SHOW=false
-BULLETTRAIN_CONTEXT_SHOW=true
 BULLETTRAIN_CONTEXT_DEFAULT_USER=$(whoami)
 BULLETTRAIN_PROMPT_CHAR=☉
+BULLETTRAIN_PROMPT_ROOT=true
+BULLETTRAIN_PROMPT_ORDER=(
+    time
+    status
+    context
+    dir
+    git
+    cmd_exec_time
+)
 
 PATH="/Users/aartem/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/Users/aartem/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
@@ -87,10 +94,6 @@ export NVM_DIR="$HOME/.nvm"
 nvm() {
     [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
     nvm "${@}"
-}
-
-j() {
-    [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 }
 
 eval "$(rbenv init -)"
