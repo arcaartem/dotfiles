@@ -1,8 +1,8 @@
 session_name: default
 windows:
-- window_name: dev window
+- window_name: editor
   panes:
     - null
-- window_name: test window
+- window_name: shell
   panes:
     - null
