@@ -184,3 +184,6 @@
 [submodule "tmux/tmuxfolder/plugins/tpm"]
 	path = tmux/tmuxfolder/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "vim/vimfolder/bundle/vim-rhubarb"]
+	path = vim/vimfolder/bundle/vim-rhubarb
+	url = https://github.com/tpope/vim-rhubarb.git
