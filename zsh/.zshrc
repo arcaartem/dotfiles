@@ -56,7 +56,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export HOME="$(eval echo ~$USER)"
-export PATH="/usr/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin:/opt/X11/bin:/usr/local/MacGPG2/bin:/Applications/VMware Fusion.app/Contents/Library"
+export PATH="$HOME/bin:/usr/local/sbin:/usr/local/MacGPG2/bin:/usr/local/opt/python/libexec/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/X11/bin:/Applications/VMware Fusion.app/Contents/Library"
 export MANPATH="/usr/local/man:$MANPATH"
 export EDITOR='vim'
 export LANG=en_GB.UTF-8
@@ -77,17 +77,6 @@ BULLETTRAIN_PROMPT_ORDER=(
     git
     cmd_exec_time
 )
-
-PATH="/Users/aartem/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/Users/aartem/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/Users/aartem/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/Users/aartem/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/Users/aartem/perl5"; export PERL_MM_OPT;
-
-function lockscreen() {
-    /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
-}
-
 eval "$(hub alias -s)"
 
 export NVM_DIR="$HOME/.nvm"
@@ -96,3 +85,5 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(rbenv init -)"
 
 [ -e ~/.zsh_local ] && .  ~/.zsh_local
+
+setopt ignoreeof
