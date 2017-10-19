@@ -178,3 +178,6 @@
 [submodule "vim/vimfolder/bundle/vim-rhubarb"]
 	path = vim/vimfolder/bundle/vim-rhubarb
 	url = https://github.com/tpope/vim-rhubarb.git
+[submodule "vim/vimfolder/bundle/ack.vim"]
+	path = vim/vimfolder/bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim.git

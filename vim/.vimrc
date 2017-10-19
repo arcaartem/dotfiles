@@ -62,6 +62,7 @@ let g:used_javascript_libs = 'underscore,react,jquery'
 let g:NERDSpaceDelims = 1
 let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
+let g:ackprg = 'ag --vimgrep'
 
 autocmd FileType xml call SetXmlFolding()
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
