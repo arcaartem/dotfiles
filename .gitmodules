@@ -181,3 +181,6 @@
 [submodule "vim/vimfolder/bundle/ack.vim"]
 	path = vim/vimfolder/bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "vim/vimfolder/bundle/salt-vim"]
+	path = vim/vimfolder/bundle/salt-vim
+	url = git@github.com:saltstack/salt-vim.git
