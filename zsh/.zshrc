@@ -87,3 +87,5 @@ eval "$(rbenv init -)"
 [ -e ~/.zsh_local ] && .  ~/.zsh_local
 
 setopt ignoreeof
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
