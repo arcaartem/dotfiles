@@ -1,6 +1,7 @@
 call plug#begin()
 
 Plug '/usr/local/opt/fzf'
+Plug 'Shougo/deoplete.nvim'
 Plug 'airblade/vim-gitgutter'
 Plug 'alvan/vim-closetag'
 Plug 'christoomey/vim-tmux-navigator'
@@ -11,6 +12,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
 Plug 'mileszs/ack.vim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'salsifis/vim-transpose'
 Plug 'saltstack/salt-vim'
 Plug 'scrooloose/nerdcommenter'
