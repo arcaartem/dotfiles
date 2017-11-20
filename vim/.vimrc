@@ -88,20 +88,20 @@ endif
 
 colorscheme desertEx
 
-let g:airline_powerline_fonts=1
-let g:gitgutter_realtime=1
-let g:gitgutter_eager=1
-let g:mustache_abbreviations=1
-let g:ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
-let g:syntastic_javascript_checkers = ["eslint"]
-let g:jsx_ext_required = 0
-let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.js"
-let g:acp_enableAtStartup = 0
-let g:used_javascript_libs = 'underscore,react,jquery'
-let g:NERDSpaceDelims = 1
 let g:NERDCommentEmptyLines = 1
+let g:NERDSpaceDelims = 1
 let g:NERDTrimTrailingWhitespace = 1
 let g:ackprg = 'ag --vimgrep'
+let g:acp_enableAtStartup = 0
+let g:airline_powerline_fonts=1
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.js"
+let g:ctrlp_user_command='ag %s -l --nocolor --hidden -g ""'
+let g:gitgutter_eager=1
+let g:gitgutter_realtime=1
+let g:jsx_ext_required = 0
+let g:mustache_abbreviations=1
+let g:syntastic_javascript_checkers = ["eslint"]
+let g:used_javascript_libs = 'underscore,react,jquery'
 
 autocmd FileType xml call SetXmlFolding()
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
