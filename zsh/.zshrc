@@ -89,3 +89,5 @@ eval "$(rbenv init -)"
 setopt ignoreeof
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# test commit
