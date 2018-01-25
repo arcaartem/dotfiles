@@ -49,7 +49,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump brew bundler colored-man-pages docker docker-compose gem git git-extras github history httpie man node npm nvm ruby screen sudo tmux vagrant)
+plugins=(autojump brew bundler colored-man-pages docker docker-compose gem git git-extras github history httpie man node npm ruby screen sudo tmux vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -87,3 +87,6 @@ eval "$(rbenv init -)"
 setopt ignoreeof
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
