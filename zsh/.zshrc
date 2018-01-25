@@ -49,7 +49,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump colored-man-pages git brew bundler docker gem history node npm ruby screen sudo tmux man vagrant httpie git-extras nvm docker-compose)
+plugins=(autojump brew bundler colored-man-pages docker docker-compose gem git git-extras github history httpie man node npm nvm ruby screen sudo tmux vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
