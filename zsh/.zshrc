@@ -49,7 +49,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump colored-man-pages git brew bundler docker gem history npm ruby screen sudo tmux vagrant httpie git-extras)
+plugins=(autojump colored-man-pages git brew bundler docker gem history node npm ruby screen sudo tmux man vagrant httpie git-extras nvm docker-compose)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -77,10 +77,8 @@ BULLETTRAIN_PROMPT_ORDER=(
     git
     cmd_exec_time
 )
-eval "$(hub alias -s)"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+eval "$(hub alias -s)"
 
 eval "$(rbenv init -)"
 
@@ -89,5 +87,3 @@ eval "$(rbenv init -)"
 setopt ignoreeof
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# test commit
