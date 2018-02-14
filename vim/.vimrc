@@ -14,6 +14,7 @@ Plug 'mattn/emmet-vim'
 Plug 'mileszs/ack.vim'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'salsifis/vim-transpose'
@@ -24,6 +25,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'terryma/vim-expand-region'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tmux-plugins/vim-tmux'
+Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-eunuch'
@@ -39,6 +41,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'w0rp/ale'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-shell'
+Plug 'moll/vim-node'
 
 call plug#end()
 
@@ -105,7 +108,6 @@ let g:jsx_ext_required = 0
 let g:mustache_abbreviations=1
 let g:syntastic_javascript_checkers = ["eslint"]
 let g:used_javascript_libs = 'underscore,react,jquery'
-let g:user_emmet_leader_key='<Tab>'
 let g:user_emmet_settings = {
   \  'javascript.jsx' : {
     \      'extends' : 'jsx',
@@ -132,6 +134,7 @@ imap <C-L> <Plug>snipMateNextOrTrigger
 smap <C-L> <Plug>snipMateNextOrTrigger
 map <MiddleMouse> <Nop>
 map <C-t> :NERDTreeToggle<CR>
+map <C-p> :Files<CR>
 nmap <leader>l :set list!<CR>
 " No idea what this is but vim weirds out without it when switching panes
 " under tmux
