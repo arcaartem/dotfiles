@@ -16,7 +16,6 @@ Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'roxma/nvim-yarp'
-Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'salsifis/vim-transpose'
 Plug 'saltstack/salt-vim'
 Plug 'scrooloose/nerdcommenter'
@@ -109,10 +108,13 @@ let g:mustache_abbreviations=1
 let g:syntastic_javascript_checkers = ["eslint"]
 let g:used_javascript_libs = 'underscore,react,jquery'
 let g:user_emmet_settings = {
-  \  'javascript.jsx' : {
-    \      'extends' : 'jsx',
-    \  },
-  \}
+   \  'javascript.jsx' : {
+   \      'extends' : 'jsx',
+   \  },
+   \  'html' : {
+   \      'quote_char' : "'",
+   \  },
+   \}
 
 autocmd FileType xml call SetXmlFolding()
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
@@ -130,8 +132,6 @@ function! SetXmlFolding()
     let g:xml_syntax_folding=1
 endfunction
 
-imap <C-L> <Plug>snipMateNextOrTrigger
-smap <C-L> <Plug>snipMateNextOrTrigger
 map <MiddleMouse> <Nop>
 map <C-t> :NERDTreeToggle<CR>
 map <C-p> :Files<CR>
