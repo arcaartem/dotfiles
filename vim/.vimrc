@@ -1,7 +1,6 @@
 call plug#begin()
 
 Plug '/usr/local/opt/fzf'
-Plug 'Shougo/deoplete.nvim'
 Plug 'airblade/vim-gitgutter'
 Plug 'alvan/vim-closetag'
 Plug 'christoomey/vim-tmux-navigator'
@@ -15,7 +14,6 @@ Plug 'mileszs/ack.vim'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'roxma/nvim-yarp'
 Plug 'salsifis/vim-transpose'
 Plug 'saltstack/salt-vim'
 Plug 'scrooloose/nerdcommenter'
@@ -41,6 +39,9 @@ Plug 'w0rp/ale'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-shell'
 Plug 'moll/vim-node'
+Plug 'baverman/vial'
+Plug 'baverman/vial-http'
+Plug 'slashmili/alchemist.vim'
 
 call plug#end()
 
@@ -61,6 +62,7 @@ set mouse=a
 set timeoutlen=500
 set ttimeoutlen=-1
 set autowrite
+set hidden
 
 function! NerdTreeStartup()
     if !exists("s:std_in") && 0 == argc()
@@ -107,6 +109,7 @@ let g:jsx_ext_required = 0
 let g:mustache_abbreviations=1
 let g:syntastic_javascript_checkers = ["eslint"]
 let g:used_javascript_libs = 'underscore,react,jquery'
+let g:alchemist_tag_stack_map = ''
 let g:user_emmet_settings = {
    \  'javascript.jsx' : {
    \      'extends' : 'jsx',
