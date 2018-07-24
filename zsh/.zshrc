@@ -90,3 +90,5 @@ setopt ignoreeof
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+export npm_config_python=/usr/bin/python
+eval "$(pyenv init -)"
