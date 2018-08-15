@@ -49,7 +49,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump brew bundler colored-man-pages docker docker-compose gem git git-extras github history httpie man node npm ruby screen sudo tmux vagrant)
+plugins=(autojump bundler colored-man-pages docker docker-compose gem git git-extras github history httpie man node npm ruby screen sudo tmux vagrant zsh-iterm-touchbar)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -58,7 +58,7 @@ source $ZSH/oh-my-zsh.sh
 export HOME="$(eval echo ~$USER)"
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/MacGPG2/bin:/usr/local/opt/python/libexec/bin:/opt/local/bin:/opt/local/sbin:/Users/aartem/Library/Python/3.7/bin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/X11/bin:/Applications/VMware Fusion.app/Contents/Library:/usr/local/share/dotnet"
 export MANPATH="/usr/local/man:$MANPATH"
-export EDITOR='vim'
+export EDITOR='nvim'
 export LANG=en_GB.UTF-8
 export DEFAULT_USER=aartem
 export HOMEBREW_NO_ANALYTICS=1
