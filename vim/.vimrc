@@ -71,7 +71,9 @@ function! NerdTreeStartup()
 endfunction
 
 set t_Co=256
-set ttymouse=xterm2
+if !has("nvim")
+   set ttymouse=xterm2
+endif
 if has("win32") || has("win16")
     if has("gui_running")
         au GUIEnter * simalt ~x
