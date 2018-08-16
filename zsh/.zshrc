@@ -49,7 +49,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump bundler colored-man-pages docker docker-compose gem git git-extras github history httpie man node npm ruby screen sudo tmux vagrant zsh-iterm-touchbar)
+plugins=(autojump bundler colored-man-pages docker docker-compose gem git git-extras github history httpie man node npm ruby screen sudo tmux vagrant zsh-iterm-touchbar pyenv)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -91,4 +91,3 @@ setopt ignoreeof
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 export npm_config_python=/usr/bin/python
-eval "$(pyenv init -)"
