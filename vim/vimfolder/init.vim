@@ -1,1 +1,1 @@
-/Users/aartem/.vimrc
+../.vimrc
