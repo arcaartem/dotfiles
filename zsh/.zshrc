@@ -81,8 +81,6 @@ BULLETTRAIN_PROMPT_ORDER=(
 
 eval "$(hub alias -s)"
 
-eval "$(rbenv init -)"
-
 [ -e ~/.zsh_local ] && .  ~/.zsh_local
 
 setopt ignoreeof
