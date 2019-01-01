@@ -120,6 +120,7 @@ let g:user_emmet_settings = {
    \      'quote_char' : "'",
    \  },
    \}
+let g:vimwiki_list = [{'path': '~/sync/wiki', 'path_html': '~/wiki_html/', 'auto_tags': 1}]
 
 autocmd FileType xml call SetXmlFolding()
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
