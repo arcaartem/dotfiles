@@ -50,7 +50,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump bundler colored-man-pages docker docker-compose gem git git-extras github history httpie man node npm ruby screen sudo tmux vagrant zsh-iterm-touchbar pyenv)
+plugins=(autojump bundler colored-man-pages docker docker-compose gem git git-extras github history httpie man node npm ruby screen sudo tmux vagrant zsh-iterm-touchbar pyenv rvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,6 +97,3 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(vim {})+abort'"
 alias vim="nvim"
 alias vi="nvim"
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
