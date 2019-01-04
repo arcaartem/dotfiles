@@ -57,7 +57,8 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 export HOME="$(eval echo ~$USER)"
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/MacGPG2/bin:/usr/local/opt/python/libexec/bin:/opt/local/bin:/opt/local/sbin:/Users/aartem/Library/Python/3.7/bin:/usr/bin:/usr/sbin:/bin:/sbin:/opt/X11/bin:/Applications/VMware Fusion.app/Contents/Library:/usr/local/share/dotnet"
+export PATH="$PATH:$HOME/bin:/usr/local/sbin:/usr/local/opt/python/libexec/bin:/opt/local/bin:/opt/local/sbin:/opt/X11/bin:/Applications/VMware Fusion.app/Contents/Library"
+
 export MANPATH="/usr/local/man:$MANPATH"
 export EDITOR='nvim'
 export LANG=en_GB.UTF-8
