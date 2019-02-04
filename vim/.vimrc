@@ -3,22 +3,27 @@ call plug#begin()
 Plug '/usr/local/opt/fzf'
 Plug 'airblade/vim-gitgutter'
 Plug 'alvan/vim-closetag'
+Plug 'baverman/vial'
+Plug 'baverman/vial-http'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'easymotion/vim-easymotion'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'godlygeek/tabular'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf.vim'
+Plug 'luochen1990/rainbow'
 Plug 'mattn/emmet-vim'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'mileszs/ack.vim'
+Plug 'moll/vim-node'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
-Plug 'maxmellon/vim-jsx-pretty'
 Plug 'salsifis/vim-transpose'
 Plug 'saltstack/salt-vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'sheerun/vim-polyglot'
+Plug 'slashmili/alchemist.vim'
 Plug 'terryma/vim-expand-region'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tmux-plugins/vim-tmux'
@@ -38,10 +43,6 @@ Plug 'vimwiki/vimwiki'
 Plug 'w0rp/ale'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-shell'
-Plug 'moll/vim-node'
-Plug 'baverman/vial'
-Plug 'baverman/vial-http'
-Plug 'slashmili/alchemist.vim'
 
 call plug#end()
 
@@ -121,6 +122,7 @@ let g:user_emmet_settings = {
    \  },
    \}
 let g:vimwiki_list = [{'path': '~/sync/wiki', 'path_html': '~/wiki_html/', 'auto_tags': 1}]
+let g:rainbow_active = 1 
 
 autocmd FileType xml call SetXmlFolding()
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
