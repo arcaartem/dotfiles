@@ -1,4 +1,5 @@
 # Path to your oh-my-zsh installation.
+ZSH_TMUX_AUTOSTART=true
 export ZSH=~/.oh-my-zsh
 export ZSH_DISABLE_COMPFIX=true
 
@@ -50,7 +51,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump bundler colored-man-pages docker docker-compose gem git git-extras github history httpie man node npm ruby screen sudo tmux vagrant zsh-iterm-touchbar pyenv rvm)
+plugins=(autojump brew bundler colored-man-pages docker docker-compose gem git git-extras history httpie man npm pip python ruby screen sudo tig tmux vagrant zsh-iterm-touchbar pyenv rvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -88,8 +89,6 @@ setopt ignoreeof
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 export npm_config_python=/usr/bin/python
 
 alias preview="fzf --preview 'bat --color \"always\" {}'"
@@ -97,3 +96,4 @@ alias preview="fzf --preview 'bat --color \"always\" {}'"
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(vim {})+abort'"
 alias vim="nvim"
 alias vi="nvim"
+
