@@ -97,3 +97,5 @@ export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(vim {})+abort'"
 alias vim="nvim"
 alias vi="nvim"
 
+export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include"
