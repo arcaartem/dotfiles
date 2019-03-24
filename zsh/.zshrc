@@ -1,74 +1,17 @@
-# Path to your oh-my-zsh installation.
-ZSH_TMUX_AUTOSTART=true
+setopt ignoreeof
 export ZSH=~/.oh-my-zsh
 export ZSH_DISABLE_COMPFIX=true
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
-ZSH_THEME="bullet-train"
-
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
+COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
+HIST_STAMPS="yyyy-mm-dd"
+HYPHEN_INSENSITIVE="true"
+ZSH_THEME="bullet-train"
+ZSH_TMUX_AUTOSTART=true
+plugins=(autojump brew bundler colored-man-pages docker docker-compose gem git git-extras history httpie man npm pip python ruby screen sudo tig tmux vagrant zsh-iterm-touchbar rvm)
+FZF_ALT_C_COMMAND="command find -L . -mindepth 1 \( -path '*/\.*' -o -fstype 'sysfs' -o -fstype 'devfs' -o -fstype 'devtmpfs' -o -fstype 'proc' -o -path '*/node_modules/*' \) -prune -o -type d -print"
 
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump brew bundler colored-man-pages docker docker-compose gem git git-extras history httpie man npm pip python ruby screen sudo tig tmux vagrant zsh-iterm-touchbar pyenv rvm)
-
-source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
-export HOME="$(eval echo ~$USER)"
-export PATH="$PATH:$HOME/bin:/usr/local/sbin:/usr/local/opt/python/libexec/bin:/opt/local/bin:/opt/local/sbin:/opt/X11/bin:/Applications/VMware Fusion.app/Contents/Library"
-
-export MANPATH="/usr/local/man:$MANPATH"
-export EDITOR='nvim'
-export LANG=en_GB.UTF-8
-export DEFAULT_USER=aartem
-export HOMEBREW_NO_ANALYTICS=1
-export DOTNET_CLI_TELEMETRY_OPTOUT=1
-export DISABLE_AUTO_TITLE="true"
-
-# Bullet-train theme options
 BULLETTRAIN_CONTEXT_DEFAULT_USER=$(whoami)
 BULLETTRAIN_PROMPT_CHAR=☉
 BULLETTRAIN_PROMPT_ROOT=true
@@ -81,21 +24,39 @@ BULLETTRAIN_PROMPT_ORDER=(
     cmd_exec_time
 )
 
-eval "$(hub alias -s)"
+source $ZSH/oh-my-zsh.sh
 
-[ -e ~/.zsh_local ] && .  ~/.zsh_local
+export HOME="$(eval echo ~$USER)"
+export PATH="$PATH:$HOME/bin:/usr/local/sbin:/usr/local/opt/python/libexec/bin:/opt/local/bin:/opt/local/sbin:/opt/X11/bin"
 
-setopt ignoreeof
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
+export MANPATH="/usr/local/man:$MANPATH"
+export EDITOR='nvim'
+export LANG=en_GB.UTF-8
+export DEFAULT_USER=aartem
+export HOMEBREW_NO_ANALYTICS=1
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export DISABLE_AUTO_TITLE="true"
 export npm_config_python=/usr/bin/python
+export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include"
 
-alias preview="fzf --preview 'bat --color \"always\" {}'"
-# add support for ctrl+o to open selected file in VS Code
-export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(vim {})+abort'"
 alias vim="nvim"
 alias vi="nvim"
 
-export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib"
-export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include"
+[ -e ~/.zsh_local ] && .  ~/.zsh_local
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+#alias preview="fzf --preview 'bat --color \"always\" {}'"
+## add support for ctrl+o to open selected file in VS Code
+#export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(vim {})+abort'"
+# Bullet-train theme options
+eval "$(hub alias -s)"
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$(pyenv init -)"
+fi
