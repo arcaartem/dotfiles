@@ -1,3 +1,7 @@
+if !isdirectory(fnamemodify(expand("$MYVIMRC"), ":p:h") . "/plugged")
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin()
 
 Plug '/usr/local/opt/fzf'
