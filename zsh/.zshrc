@@ -1,8 +1,8 @@
 setopt ignoreeof
-export ZSH=~/.oh-my-zsh
-export ZSH_DISABLE_COMPFIX=true
 
-# DISABLE_AUTO_UPDATE="true"
+#TODO: replace below with full path
+export ZSH=~/.oh-my-zsh
+
 COMPLETION_WAITING_DOTS="true"
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 HIST_STAMPS="yyyy-mm-dd"
@@ -26,6 +26,7 @@ BULLETTRAIN_PROMPT_ORDER=(
 
 source $ZSH/oh-my-zsh.sh
 
+# TODO: set home directory
 export HOME="$(eval echo ~$USER)"
 export PATH="$PATH:$HOME/bin:/usr/local/sbin:/usr/local/opt/python/libexec/bin:/opt/local/bin:/opt/local/sbin:/opt/X11/bin"
 
