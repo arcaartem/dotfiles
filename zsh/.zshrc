@@ -9,7 +9,7 @@ HIST_STAMPS="yyyy-mm-dd"
 HYPHEN_INSENSITIVE="true"
 ZSH_THEME="bullet-train"
 ZSH_TMUX_AUTOSTART=true
-plugins=(autojump brew bundler colored-man-pages docker docker-compose gem git git-extras history httpie man npm pip python ruby screen sudo tig tmux vagrant zsh-iterm-touchbar rvm)
+plugins=(autojump brew bundler colored-man-pages docker docker-compose gem git git-extras history httpie man npm pip python ruby screen sudo tig tmux vagrant rvm)
 FZF_ALT_C_COMMAND="command find -L . -mindepth 1 \( -path '*/\.*' -o -fstype 'sysfs' -o -fstype 'devfs' -o -fstype 'devtmpfs' -o -fstype 'proc' -o -path '*/node_modules/*' \) -prune -o -type d -print"
 
 BULLETTRAIN_CONTEXT_DEFAULT_USER=$(whoami)
