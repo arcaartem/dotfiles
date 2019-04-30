@@ -43,6 +43,9 @@ Plug 'vimwiki/vimwiki'
 Plug 'w0rp/ale'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-shell'
+Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'OrangeT/vim-csharp'
 
 call plug#end()
 
@@ -123,6 +126,11 @@ let g:user_emmet_settings = {
    \}
 let g:vimwiki_list = [{'path': '~/sync/wiki', 'path_html': '~/wiki_html/', 'auto_tags': 1}]
 let g:rainbow_active = 1 
+let g:NERDTreeWinPos = "right"
+let g:OmniSharp_selector_ui = 'fzf'    " Use fzf.vim
+let g:ale_linters = {
+\ 'cs': ['OmniSharp']
+\}
 
 autocmd FileType xml call SetXmlFolding()
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
