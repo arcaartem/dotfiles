@@ -46,6 +46,7 @@ Plug 'xolox/vim-shell'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'OrangeT/vim-csharp'
+Plug 'google/vim-jsonnet'
 
 call plug#end()
 
@@ -128,6 +129,7 @@ let g:vimwiki_list = [{'path': '~/sync/wiki', 'path_html': '~/wiki_html/', 'auto
 let g:rainbow_active = 1 
 let g:NERDTreeWinPos = "right"
 let g:OmniSharp_selector_ui = 'fzf'    " Use fzf.vim
+let g:jsonnet_fmt_on_save=0
 let g:ale_linters = {
 \ 'cs': ['OmniSharp']
 \}
