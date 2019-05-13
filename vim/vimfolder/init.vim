@@ -74,6 +74,19 @@ function! NerdTreeStartup()
     if !exists("s:std_in") && 0 == argc()
         NERDTree
     end
+
+    if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in")
+        exe 'NERDTree' argv()[0] 
+        wincmd p 
+        ene 
+        exe 'cd '.argv()[0] 
+    end
+endfunction
+
+function! NerdTreeBufCheck()
+   if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) 
+      q 
+   end
 endfunction
 
 set t_Co=256
@@ -129,6 +142,7 @@ let g:user_emmet_settings = {
 let g:vimwiki_list = [{'path': '~/sync/wiki', 'path_html': '~/wiki_html/', 'auto_tags': 1}]
 let g:rainbow_active = 1 
 let g:NERDTreeWinPos = "right"
+let g:NERDTreeWinSizeMax = 100
 let g:OmniSharp_selector_ui = 'fzf'    " Use fzf.vim
 let g:jsonnet_fmt_on_save=0
 let g:ale_linters = {
@@ -141,6 +155,7 @@ autocmd Filetype jade setlocal shiftwidth=2 tabstop=2
 autocmd BufRead,BufNewFile *.md set filetype=markdown
 autocmd BufNewFile,BufReadPost *.coffee setlocal shiftwidth=2 tabstop=2 expandtab
 autocmd StdinReadPre * let s:std_in=1
+autocmd bufenter * call NerdTreeBufCheck()
 autocmd VimEnter * call NerdTreeStartup()
 autocmd filetype crontab setlocal nobackup nowritebackup
 autocmd BufRead,BufNewFile *.ledger set filetype=ledger
