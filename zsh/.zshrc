@@ -43,6 +43,7 @@ export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include"
 
 alias vim="nvim"
 alias vi="nvim"
+alias ag="ag $* --pager 'less -R'"
 
 [ -e ~/.zsh_local ] && .  ~/.zsh_local
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
