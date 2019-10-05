@@ -52,6 +52,7 @@ Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'OrangeT/vim-csharp'
 Plug 'google/vim-jsonnet'
+Plug 'https://github.com/Alok/notational-fzf-vim'
 
 call plug#end()
 
@@ -144,6 +145,7 @@ let g:user_emmet_settings = {
    \  },
    \}
 let g:vimwiki_list = [{'path': '~/sync/wiki', 'path_html': '~/wiki_html/', 'auto_tags': 1}]
+let g:nv_search_paths = ['~/sync/wiki']
 let g:rainbow_active = 1 
 let g:NERDTreeWinPos = "right"
 let g:NERDTreeWinSizeMax = 100
