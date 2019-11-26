@@ -1,0 +1,54 @@
+brew "autojump"
+brew "bat"
+brew "coreutils"
+brew "csvkit"
+brew "curl"
+brew "fzf"
+brew "gawk"
+brew "ghostscript"
+brew "git"
+brew "git-extras"
+brew "gnu-sed"
+brew "gnuplot"
+brew "htop"
+brew "httpie"
+brew "hub"
+brew "jq"
+brew "neovim"
+brew "netcat"
+brew "nmap"
+brew "node@12"
+brew "openssl"
+brew "overmind"
+brew "prettyping"
+brew "python"
+brew "rbenv"
+brew "reattach-to-user-namespace"
+brew "ripgrep"
+brew "rsync"
+brew "socat"
+brew "sqlite"
+brew "telnet"
+brew "the_silver_searcher"
+brew "tig"
+brew "tmux"
+brew "tree"
+brew "up"
+brew "urlview"
+brew "vifm"
+brew "watch"
+brew "wget"
+brew "xmlstarlet"
+brew "xz"
+brew "zsh"
+mas "Be Focused Pro", id: 961632517
+mas "CalcTape", id: 945336271
+mas "Focus Matrix", id: 1087284172
+mas "HazeOver", id: 430798174
+mas "Magnet", id: 441258766
+mas "Micro Snitch", id: 972028355
+mas "Mountain Duck", id: 1024974133
+mas "PCalc", id: 403504866
+mas "QR Journal", id: 483820530
+mas "SnippetsLab", id: 1006087419
+mas "The Unarchiver", id: 425424353
