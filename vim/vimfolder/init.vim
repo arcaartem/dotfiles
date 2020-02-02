@@ -17,6 +17,7 @@ Plug 'cakebaker/scss-syntax.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'easymotion/vim-easymotion'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'godlygeek/tabular'
 Plug 'google/vim-jsonnet'
 Plug 'https://github.com/Alok/notational-fzf-vim'
@@ -154,6 +155,7 @@ let g:jsonnet_fmt_on_save=0
 let g:ale_linters = {
 \ 'cs': ['OmniSharp']
 \}
+let g:go_def_mapping_enabled=0
 
 autocmd FileType xml call SetXmlFolding()
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
@@ -171,6 +173,7 @@ function! SetXmlFolding()
     setlocal foldmethod=syntax
     let g:xml_syntax_folding=1
 endfunction
+
 
 map <MiddleMouse> <Nop>
 map <C-t> :NERDTreeToggle<CR>
