@@ -32,7 +32,7 @@ source $ZSH/oh-my-zsh.sh
 
 # TODO: set home directory
 export HOME="$(eval echo ~$USER)"
-export PATH="$PATH:$HOME/bin:/usr/local/sbin:/usr/local/opt/python/libexec/bin:/opt/local/bin:/opt/local/sbin:/opt/X11/bin"
+export PATH="$PATH:$HOME/bin:$HOME/go/bin:/usr/local/sbin:/usr/local/opt/python/libexec/bin:/opt/local/bin:/opt/local/sbin:/opt/X11/bin"
 
 export MANPATH="/usr/local/man:$MANPATH"
 export EDITOR='nvim'
