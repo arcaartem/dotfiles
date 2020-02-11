@@ -187,3 +187,5 @@ nnoremap <silent> <esc>[A <Nop>
 
 " To clear last search highlight when pressing ESC
 nnoremap <silent> <esc> :noh<cr><esc>
+nnoremap <leader>a :Rg <C-r><C-w><CR>
+nnoremap <leader>s :Rg<CR>
