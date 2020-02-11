@@ -21,6 +21,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'godlygeek/tabular'
 Plug 'google/vim-jsonnet'
 Plug 'https://github.com/Alok/notational-fzf-vim'
+Plug 'https://github.com/jfo/hound.vim'
 Plug 'https://github.com/jodosha/vim-godebug'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf.vim'
