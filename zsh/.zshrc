@@ -50,7 +50,6 @@ alias ag="ag $* --pager 'less -R'"
 ## add support for ctrl+o to open selected file in VS Code
 #export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(vim {})+abort'"
 # Bullet-train theme options
-eval "$(hub alias -s)"
 
 
 #export NVM_DIR="$HOME/.nvm"
