@@ -97,6 +97,17 @@ function! NerdTreeBufCheck()
    end
 endfunction
 
+function! s:build_quickfix_list(lines)
+  call setqflist(map(copy(a:lines), '{ "filename": v:val }'))
+  copen
+  cc
+endfunction
+
+function! SetXmlFolding()
+    setlocal foldmethod=syntax
+    let g:xml_syntax_folding=1
+endfunction
+
 set t_Co=256
 if !has("nvim")
    set ttymouse=xterm2
@@ -158,6 +169,11 @@ let g:ale_linters = {
 \ 'cs': ['OmniSharp']
 \}
 let g:go_def_mapping_enabled=0
+let g:fzf_action = {
+  \ 'ctrl-q': function('s:build_quickfix_list'),
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
 
 autocmd FileType xml call SetXmlFolding()
 autocmd Filetype ruby setlocal shiftwidth=2 tabstop=2
@@ -171,16 +187,12 @@ autocmd filetype crontab setlocal nobackup nowritebackup
 autocmd BufRead,BufNewFile *.ledger set filetype=ledger
 autocmd FocusLost * silent! wa
 
-function! SetXmlFolding()
-    setlocal foldmethod=syntax
-    let g:xml_syntax_folding=1
-endfunction
-
 
 map <MiddleMouse> <Nop>
 map <C-t> :NERDTreeToggle<CR>
 map <C-p> :Files<CR>
 nmap <leader>l :set list!<CR>
+
 " No idea what this is but vim weirds out without it when switching panes
 " under tmux
 nnoremap <silent> <esc>[A <Nop> 
@@ -189,3 +201,6 @@ nnoremap <silent> <esc>[A <Nop>
 nnoremap <silent> <esc> :noh<cr><esc>
 nnoremap <leader>a :Rg <C-r><C-w><CR>
 nnoremap <leader>s :Rg<CR>
+nnoremap <leader>f :NERDTreeFind<CR>
+
+command! -bang -nargs=* Rg call fzf#vim#grep("rg --column --line-number --no-heading --color=always --smart-case ".shellescape(<q-args>), 1, {'options': '--delimiter : --nth 4..'}, <bang>0)
