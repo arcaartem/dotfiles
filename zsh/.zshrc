@@ -44,6 +44,7 @@ alias vi="nvim"
 alias ag="ag $* --pager 'less -R'"
 
 [ -e ~/.zsh_local ] && .  ~/.zsh_local
+[ -e ~/.zshrc_local ] && .  ~/.zshrc_local
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #alias preview="fzf --preview 'bat --color \"always\" {}'"
