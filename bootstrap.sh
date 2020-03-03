@@ -24,5 +24,6 @@ fi
 [[ -f ~/.tmux.conf ]] || ln -s ${DOTFILES_BASE}/tmux/.tmux.conf ~/.tmux.conf
 [[ -d ~/.tmux ]] || ln -s ${DOTFILES_BASE}/tmux/tmuxfolder ~/.tmux
 [[ -d ~/.config/nvim ]] || ln -s ${DOTFILES_BASE}/vim/vimfolder ~/.config/nvim
+[[ -d ~/.config/karabiner ]] || ln -s ${DOTFILES_BASE}/karabiner ~/.config/karabiner
 
 [[ -f ~/.oh-mh-zsh/custom/themes/bullet-train.zsh-theme ]] || curl -o ~/.oh-my-zsh/custom/themes/bullet-train.zsh-theme https://raw.githubusercontent.com/caiogondim/bullet-train.zsh/master/bullet-train.zsh-theme
